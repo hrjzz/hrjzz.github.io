@@ -135,6 +135,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "课程", link: "/course/plan", activeMatch: "/30.课程/" },
       { text: "读书", link: "/read/plan", activeMatch: "/20.读书/" },
+      { text: "游学", link: "/study/plan", activeMatch: "/40.游学/" },
       { text: "行路", link: "/activity/plan", activeMatch: "/10.活动/" },
       { text: "茶话会", link: "/tea/1/1", activeMatch: "/05.茶话会/" },
       { text: "关于我们", link: "/about/intro", activeMatch: "/01.宣传/" },

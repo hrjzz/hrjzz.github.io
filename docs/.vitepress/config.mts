@@ -18,7 +18,7 @@ const teekConfig = defineTeekConfig({
   },
   footerInfo: {
     theme: {
-      name: `全国首个专注 HR 在校生培养的公益项目`,
+      name: `HR 金种子公益计划`,
     },
     copyright: {
       createYear: 2024,
@@ -51,12 +51,15 @@ const teekConfig = defineTeekConfig({
       },
     },
   ],
+  articleUpdate: {
+    enabled: false
+  }
 });
 
 export default defineConfig({
   extends: teekConfig,
-  title: "向阳而生",
-  description: "HR 金种子公益计划",
+  title: "HR 金种子公益计划",
+  description: "向阳而生",
   lastUpdated: true,
   lang: "zh-CN",
   head: [
@@ -130,8 +133,11 @@ export default defineConfig({
     },
     nav: [
       { text: "首页", link: "/" },
+      { text: "课程", link: "/course/plan", activeMatch: "/30.课程/" },
+      { text: "读书", link: "/read/plan", activeMatch: "/20.读书/" },
+      { text: "行路", link: "/activity/plan", activeMatch: "/10.活动/" },
+      { text: "茶话会", link: "/tea/1/1", activeMatch: "/05.茶话会/" },
       { text: "关于我们", link: "/about/intro", activeMatch: "/01.宣传/" },
-      { text: "活动", link: "/activity/plan", activeMatch: "/10.活动/" },
     ],
     search: {
       provider: "local",
